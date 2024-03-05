@@ -1,12 +1,12 @@
-import { QueryClientProvider, QueryClient } from "react-query"
-import { ThemeProvider } from "styled-components"
-import { theme } from "./style/theme"
-import { RecoilRoot } from "recoil"
-import { Toaster } from "react-hot-toast"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import MainPage from "./pages/MainPage"
+import { QueryClientProvider, QueryClient } from "react-query";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./style/Theme";
+import { RecoilRoot } from "recoil";
+import { Toaster } from "react-hot-toast";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainPage from "./pages/MainPage";
 
-const queryClient = new QueryClient
+const queryClient = new QueryClient;
 
 function App() { 
   return (
@@ -25,4 +25,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

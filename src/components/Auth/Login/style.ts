@@ -7,12 +7,11 @@ export const LoginContainer = styled.div`
   height: 100%;
   justify-content: center;
   background-size: cover;
-  background: #F6F6F6;
+  background: #f6f6f6;
 `;
 
 export const LoginTopWrap = styled.div`
   width: 100%;
-  min-height: min-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +26,7 @@ export const LoginHeading = styled.h2`
 `;
 
 export const LoginSubHeading = styled.h2`
-  color: #C70EFD;
+  color: #c70efd;
   font-size: 16px;
   text-align: center;
   margin-top: -10px;
@@ -47,8 +46,8 @@ export const LoginWrapper = styled.form`
   align-items: center;
   box-shadow: 0px 2px 8px rgba(33, 33, 33, 0.25);
   background-color: #fff;
-  width: 22%;
-  height: 55%;
+  width: 80%;
+  max-width: 330px;
 `;
 
 export const LoginButton = styled.button`
@@ -56,7 +55,7 @@ export const LoginButton = styled.button`
   height: 50px;
   border-radius: 10px;
   border: none;
-  background: #0095F6;
+  background: #0095f6;
   font-size: 14px;
   font-weight: bold;
   font-family: 'Pretendard';
@@ -69,13 +68,13 @@ export const LoginInput = styled.input`
   border-radius: 10px;
   outline: none;
   border: none;
-  border: 1px solid #BDBDC8;
+  border: 1px solid #bdbdc8;
   padding-left: 13px;
 
   &::placeholder {
     font-size: 16px;
     font-family: 'Pretendard';
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 `;
 
@@ -95,7 +94,7 @@ export const LoginText = styled.label`
 
 export const LoginOppositePartButton = styled.button`
   font-size: 14px;
-  color: #C70EFD;
+  color: #c70efd;
   background: none;
   border: 0px;
   cursor: pointer;
@@ -103,7 +102,7 @@ export const LoginOppositePartButton = styled.button`
 `;
 
 export const LoginOppositePartText = styled.p`
-  color: #9F9FAF;
+  color: #9f9faf;
   font-size: 14px;
   font-weight: 500;
 `;
@@ -113,4 +112,5 @@ export const LoginOppositePartWrap = styled.div`
   justify-content: center;
   margin-right: auto;
   margin-top: -20px;
+  align-items: center;
 `;

@@ -3,8 +3,8 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./style/Theme";
 import { RecoilRoot } from "recoil";
 import { Toaster } from "react-hot-toast";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MainPage from "./pages/MainPage";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router";
 
 const queryClient = new QueryClient;
 
@@ -15,9 +15,7 @@ function App() {
         <RecoilRoot>
           <Toaster />
           <BrowserRouter>
-            <Routes>
-              <Route element={<MainPage />} path="/" />
-            </Routes>
+            <Router />
           </BrowserRouter>
         </RecoilRoot>
       </ThemeProvider>

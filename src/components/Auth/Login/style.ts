@@ -58,7 +58,7 @@ export const LoginButton = styled.button`
   background: #0095f6;
   font-size: 14px;
   font-weight: bold;
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   color: #fff;
 `;
 
@@ -73,7 +73,7 @@ export const LoginInput = styled.input`
 
   &::placeholder {
     font-size: 16px;
-    font-family: 'Pretendard';
+    font-family: "Pretendard";
     color: #a6a6a6;
   }
 `;
@@ -89,7 +89,7 @@ export const InputContainer = styled.div`
 
 export const LoginText = styled.label`
   font-size: 16px;
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
 `;
 
 export const LoginOppositePartButton = styled.button`

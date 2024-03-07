@@ -1,5 +1,5 @@
 import * as l from "./style";
-import Logo from "../../../assets/logo.svg";
+import Logo from "../../../assets/logo.jpg";
 
 const Login = () => {
   return (

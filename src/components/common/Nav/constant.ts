@@ -1,30 +1,45 @@
+import Home from "../../../assets/img/home.svg";
+import Search from "../../../assets/img/search.svg";
+import Around from "../../../assets/img/around.svg";
+import Community from "../../../assets/img/commu.svg";
+import Event from "../../../assets/img/event.svg";
+import Notification from "../../../assets/img/noti.svg";
+import Profile from "../../../assets/img/profile.svg";
+
 export const NAV_ITEM = [
     {
         title: "홈",
-        link: "/"
+        link: "/",
+        icon: Home
     },
     {
         title: "검색",
-        link: "/"
+        link: "/",
+        icon: Search
     },
     {
         title: "탐색",
-        link: "/around"
+        link: "/around",
+        icon: Around
     },
     {
         title: "커뮤니티",
-        link: "/community"
+        link: "/community",
+        icon: Community
     },
     {
         title: "이벤트",
-        link: "/event"
+        link: "/event",
+        icon: Event
     },
     {
         title: "알림",
-        link: "/notification"
+        link: "/notification",
+        icon: Notification
     },
     {
         title: "프로필",
-        link: "/profile"
+        link: "/profile",
+        icon: Profile
     },
 ]

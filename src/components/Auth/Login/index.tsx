@@ -1,14 +1,39 @@
 import * as l from "./style";
 import Logo from "../../../assets/logo.svg";
+import { useState } from "react";
+import toast from "react-hot-toast";
+import FloatingLabelInput from "react-floating-label";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [loginData, setLoginData] = useState({
+    userId: "",
+    password: "",
+  });
+
+  const handleInputChange = (e: any) => {
+    const { name, value } = e.target;
+    setLoginData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleLogin = (e: any) => {
+    e.preventDefault();
+    const { userId, password } = loginData;
+    if (userId === "" || password === "") {
+      toast.error("아이디와 비밀번호를 입력해주세요.");
+    } else {
+      toast.success("로그인 성공!");
+      navigate("/");
+    }
+  };
+
   return (
     <l.LoginContainer>
-      <l.LoginWrapper
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-      >
+      <l.LoginWrapper onSubmit={handleLogin}>
         <l.LoginTopWrap>
           <img src={Logo} width={50} height={50} alt="logo" />
           <l.LoginHeading>환영합니다</l.LoginHeading>
@@ -17,18 +42,23 @@ const Login = () => {
           </l.LoginSubHeading>
         </l.LoginTopWrap>
         <l.InputContainer>
-          <l.LoginInput
-            type="text"
+          <FloatingLabelInput
+            id="userId"
             placeholder="아이디를 입력해주세요"
             name="userId"
+            value={loginData.userId}
+            onChange={handleInputChange}
           />
-          <l.LoginInput
-            type="password"
+          <FloatingLabelInput
+            id="password"
             placeholder="비밀번호를 입력해주세요"
             name="password"
+            type="password"
+            value={loginData.password}
+            onChange={handleInputChange}
           />
         </l.InputContainer>
-        <l.LoginButton>로그인</l.LoginButton>
+        <l.LoginButton type="submit">로그인</l.LoginButton>
         <l.LoginOppositePartWrap
           style={{
             display: "flex",
@@ -39,7 +69,9 @@ const Login = () => {
           <l.LoginOppositePartText>
             아직 레츠고 회원이 아니신가요?
           </l.LoginOppositePartText>
-          <l.LoginOppositePartButton>회원가입</l.LoginOppositePartButton>
+          <l.LoginOppositePartButton onClick={() => navigate("Signup")}>
+            회원가입
+          </l.LoginOppositePartButton>
         </l.LoginOppositePartWrap>
       </l.LoginWrapper>
     </l.LoginContainer>

@@ -1,0 +1,153 @@
+.fl-input-container {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  position: relative;
+}
+
+.fl-input-container input:not(:focus):not(.fl-valid):not(.fl-invalid) {
+  color: transparent;
+}
+
+.fl-input-container input,
+.fl-input-container label,
+.fl-error-msg {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: none;
+}
+
+.fl-input-container input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 0;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 100%;
+  line-height: 25px;
+}
+
+.fl-input-label {
+  -moz-transform-origin: left top;
+  -moz-transform: scale(1) translate3d(0, 22px, 0);
+  -moz-transition: 200ms ease all;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  -webkit-transform-origin: left top;
+  -webkit-transform: scale(1) translate3d(0, 22px, 0);
+  -webkit-transition: 200ms ease all;
+  color: #999;
+  font-weight: normal;
+  opacity: 0.75;
+  order: 1;
+  padding-left: 2px;
+  pointer-events: none;
+  text-transform: capitalize;
+  transform-origin: left top;
+  transform: scale(1) translate3d(0, 22px, 0);
+  transition: 200ms ease all;
+}
+
+.fl-input-container input:focus + label,
+.fl-input-container input.fl-valid + label,
+.fl-invalid + label {
+  -moz-transform: scale(0.8) translate3d(0, 5px, 0);
+  -webkit-transform: scale(0.8) translate3d(0, 5px, 0);
+  color: #3949AB;
+  opacity: 1;
+  transform: scale(0.8) translate3d(0, 5px, 0);
+}
+
+.fl-input:active,
+.fl-input:focus,
+.fl-input-label {
+  outline: 0;
+}
+
+.fl-input {
+  -ms-flex-order: 2;
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -webkit-order: 2;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #000;
+  flex: 1 1 auto;
+  order: 2;
+}
+
+.fl-input-bar {
+  -ms-flex-order: 3;
+  -webkit-order: 3;
+  display: block;
+  order: 3;
+  top: 0;
+}
+
+.fl-input-bar::after,
+.fl-input-bar::before {
+  -moz-transition: 200ms ease all;
+  -webkit-transition: 200ms ease all;
+  background: #3949AB;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  position: absolute;
+  transition: 200ms ease all;
+  width: 0;
+}
+
+.fl-input-bar::before {
+  left: 50%;
+}
+
+.fl-input-bar::after {
+  right: 50%;
+}
+
+.fl-input:focus ~ .fl-input-bar::after,
+.fl-input:focus ~ .fl-input-bar::before,
+.fl-invalid ~ .fl-input-bar::after,
+.fl-invalid ~ .fl-input-bar::before {
+  width: 50%;
+}
+
+.fl-input-bar,
+.fl-error-msg {
+  position: relative;
+  width: inherit;
+}
+
+.fl-error-msg {
+  bottom: 0;
+  display: none;
+  font-size: 13px;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.fl-error-show {
+  display: inline-block;
+}
+
+.fl-invalid ~ .fl-input-bar::after,
+.fl-invalid ~ .fl-input-bar::before {
+  background: #E74C3C;
+}
+
+.fl-input-container .fl-input.fl-invalid + label,
+.fl-error-msg {
+  color: #E74C3C;
+}

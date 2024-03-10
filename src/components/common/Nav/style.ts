@@ -32,6 +32,7 @@ export const NavTopWrap = styled.div`
 export const NavTitle = styled.img`
   cursor: pointer;
   margin-right: 65px;
+  object-fit: scale-down;
 `;
 
 export const NavMidWrap = styled.div`
@@ -44,8 +45,8 @@ export const NavMidWrap = styled.div`
   padding-left: 46px;
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Pretendard';
-  color: #BDBDC8;
+  font-family: "Pretendard";
+  color: #bdbdc8;
 
   @media screen and (max-width: 768px) {
     padding-left: 20px;
@@ -60,4 +61,3 @@ export const NavCategoryBox = styled.div`
   column-gap: 14px;
   cursor: pointer;
 `;
-

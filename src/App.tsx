@@ -6,9 +6,9 @@ import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
 import Router from "./router";
 
-const queryClient = new QueryClient;
+const queryClient = new QueryClient();
 
-function App() { 
+function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
@@ -20,7 +20,7 @@ function App() {
         </RecoilRoot>
       </ThemeProvider>
     </QueryClientProvider>
-  )
+  );
 }
 
 export default App;

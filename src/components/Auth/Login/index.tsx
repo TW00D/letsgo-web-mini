@@ -2,7 +2,6 @@ import * as l from "./style";
 import Logo from "../../../assets/logo.svg";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import FloatingLabelInput from "react-floating-label";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -42,18 +41,17 @@ const Login = () => {
           </l.LoginSubHeading>
         </l.LoginTopWrap>
         <l.InputContainer>
-          <FloatingLabelInput
-            id="userId"
+          <l.LoginInput
+            type="text"
             placeholder="아이디를 입력해주세요"
             name="userId"
             value={loginData.userId}
             onChange={handleInputChange}
           />
-          <FloatingLabelInput
-            id="password"
+          <l.LoginInput
+            type="password"
             placeholder="비밀번호를 입력해주세요"
             name="password"
-            type="password"
             value={loginData.password}
             onChange={handleInputChange}
           />

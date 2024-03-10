@@ -12,6 +12,7 @@
   "dependencies": {
     "floating-label-react": "^1.0.3",
     "react": "^18.2.0",
+    "react-bootstrap-floating-label": "^1.6.0",
     "react-dom": "^18.2.0",
     "react-floating-label": "^1.0.0",
     "react-floating-label-input": "^4.3.4",

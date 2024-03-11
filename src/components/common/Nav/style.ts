@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
   top: 0;
   left: 0;
 
-  width: 250px;
+  width: 17%;
   height: 100vh;
 
   display: flex;

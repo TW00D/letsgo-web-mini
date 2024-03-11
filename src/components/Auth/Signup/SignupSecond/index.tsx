@@ -1,43 +1,8 @@
 import * as S from "./style";
 import logo from "../../../../assets/logo.jpg";
 import highschool from "../../../../assets/highschool_logo.jpg";
-import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-type Signupdata = {
-  id: string;
-  pw: string;
-};
 
 const SignupSecond = () => {
-  const [signupData, setSignupData] = useState<Signupdata>({
-    id: "",
-    pw: "",
-  });
-
-  const onChangeData = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-
-    const updateData = {
-      ...signupData,
-      [name]: value,
-    };
-
-    setSignupData(updateData);
-  };
-
-  const notify = () => {
-    if (!signupData.id) {
-      toast("아이디를 입력해주세요");
-    } else if (!signupData.pw) {
-      toast("비밀번호를 입력해주세요");
-    }
-  };
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <>
       <S.SignupContainer>

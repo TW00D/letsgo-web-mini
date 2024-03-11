@@ -67,7 +67,7 @@ const Login = () => {
           <l.LoginOppositePartText>
             아직 레츠고 회원이 아니신가요?
           </l.LoginOppositePartText>
-          <l.LoginOppositePartButton onClick={() => navigate("Signup")}>
+          <l.LoginOppositePartButton onClick={() => navigate("/Signup")}>
             회원가입
           </l.LoginOppositePartButton>
         </l.LoginOppositePartWrap>

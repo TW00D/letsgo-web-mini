@@ -35,7 +35,7 @@ const SignupFirst = () => {
     }
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: any) => {
     e.preventDefault();
 
     navigate("/SignupSecond");

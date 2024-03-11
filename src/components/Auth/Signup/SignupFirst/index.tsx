@@ -1,8 +1,8 @@
 import * as S from "./style";
 import logo from "../../../../assets/logo.jpg";
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import { Link, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 type Signupdata = {
   id: string;
@@ -29,15 +29,14 @@ const SignupFirst = () => {
 
   const notify = () => {
     if (!signupData.id) {
-      toast("아이디를 입력해주세요");
+      toast.error("아이디를 입력해주세요");
     } else if (!signupData.pw) {
-      toast("비밀번호를 입력해주세요");
+      toast.error("비밀번호를 입력해주세요");
     }
   };
 
   const onSubmit = (e: any) => {
     e.preventDefault();
-
     navigate("/SignupSecond");
   };
 
@@ -46,7 +45,7 @@ const SignupFirst = () => {
       <S.SignupContainer>
         <S.SignupWrapper onSubmit={onSubmit}>
           <S.SignupTopWraper>
-            <img src={logo} width={50} height={50} alt="logo"></img>
+            <img src={logo} width={50} height={50} alt="logo" />
             <S.SignupTitle>만나서 반가워요</S.SignupTitle>
             <S.SignupSubtitle>
               가장 트렌디한 학생 커뮤니티, 레츠고입니다
@@ -59,14 +58,14 @@ const SignupFirst = () => {
               name="id"
               value={signupData?.id}
               onChange={onChangeData}
-            ></S.SignupInput>
+            />
             <S.SignupInput
               type="password"
               placeholder="비밀번호를 입력해주세요"
               name="pw"
               value={signupData?.pw}
               onChange={onChangeData}
-            ></S.SignupInput>
+            />
             {signupData.id && signupData.pw ? (
               <S.SignupActiveButton>회원가입</S.SignupActiveButton>
             ) : (

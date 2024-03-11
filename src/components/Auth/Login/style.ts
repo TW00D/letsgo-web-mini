@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const LoginContainer = styled.div`
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100%;
   justify-content: center;
-  background-size: cover;
-  background: #f6f6f6;
+  background-color: #f6f6f6;
 `;
 
 export const LoginTopWrap = styled.div`
@@ -21,16 +20,20 @@ export const LoginTopWrap = styled.div`
 export const LoginHeading = styled.h2`
   color: #000;
   font-size: 24px;
+  font-family: "Pretendard";
   align-items: center;
   margin-top: 2px;
 `;
 
 export const LoginSubHeading = styled.h2`
-  color: #c70efd;
+  color: transparent;
   font-size: 16px;
+  font-family: "Pretendard";
   text-align: center;
-  margin-top: -10px;
   font-weight: 600;
+  background-image: linear-gradient(to right, #db00ff, #455cec);
+  background-clip: text;
+  -webkit-background-clip: text;
 `;
 
 export const LoginWrapper = styled.form`
@@ -44,7 +47,8 @@ export const LoginWrapper = styled.form`
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  box-shadow: 0px 2px 8px rgba(33, 33, 33, 0.25);
+  box-shadow: 0px 0px 50px rgba(33, 33, 33, 0.05);
+  justify-content: center;
   background-color: #fff;
   width: 80%;
   max-width: 330px;
@@ -99,18 +103,17 @@ export const LoginOppositePartButton = styled.button`
   border: 0px;
   cursor: pointer;
   font-weight: 600;
+  margin-left: 5px;
 `;
 
 export const LoginOppositePartText = styled.p`
   color: #9f9faf;
   font-size: 14px;
   font-weight: 500;
+  display: inline;
 `;
 
 export const LoginOppositePartWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-right: auto;
+  display: inline;
   margin-top: -20px;
-  align-items: center;
 `;

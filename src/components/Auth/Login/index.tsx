@@ -1,5 +1,5 @@
 import * as l from "./style";
-import Logo from "../../../assets/logo.svg";
+import Logo from "../../../assets/logo.jpg";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";

@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
   top: 0;
   left: 0;
 
-  width: 250px;
+  width: 17%;
   height: 100vh;
 
   display: flex;
@@ -22,16 +22,18 @@ export const NavContainer = styled.div`
 `;
 
 export const NavTopWrap = styled.div`
+  display: flex;
+
   width: 100%;
   height: 50px;
-
-  margin-top: 56px;
+  
+  margin-top: 10px;
+  padding-left: 46px;
   text-align: center;
 `;
 
 export const NavTitle = styled.img`
   cursor: pointer;
-  margin-right: 65px;
   object-fit: scale-down;
 `;
 

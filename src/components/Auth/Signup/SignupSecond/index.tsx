@@ -34,7 +34,7 @@ const SignupSecond = () => {
     }
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: any) => {
     e.preventDefault();
   };
 

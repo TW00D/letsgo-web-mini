@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
   top: 0;
   left: 0;
 
-  width: 17%;
+  width: 16%;
   height: 100vh;
 
   display: flex;
@@ -59,7 +59,7 @@ export const NavCategoryBox = styled.div`
   display: flex;
   align-items: center;
 
-  font-size: 14px;
+  font-size: 16px;
   column-gap: 14px;
   cursor: pointer;
 `;

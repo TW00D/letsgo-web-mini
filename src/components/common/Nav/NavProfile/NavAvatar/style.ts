@@ -27,3 +27,7 @@ export const NavIntroduction = styled.h5`
   font-size: 1em;
   font-weight: 400;
 `;
+
+export const NavAvatarImg = styled.img`
+
+`

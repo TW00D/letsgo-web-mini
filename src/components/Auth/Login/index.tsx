@@ -1,12 +1,11 @@
-import toast from "react-hot-toast";
-import Logo from "../../../assets/logo.jpg";
 import * as l from "./style";
-import { useLogin } from "../../../hooks/Auth/useLogin";
+import Logo from "../../../assets/logo.jpg";
 import { useNavigate } from "react-router-dom";
+import { useLogin } from "../../../hooks/Auth/useLogin";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { handleChange, handleSubmit, credentials } = useLogin();
+  const { credentials, handleChange, handleSubmit } = useLogin();
 
   return (
     <>
@@ -23,8 +22,8 @@ const Login = () => {
             <l.LoginInput
               type="text"
               placeholder="아이디를 입력해주세요"
-              name="userId"
-              value={credentials.userId}
+              name="username"
+              value={credentials.username}
               onChange={handleChange}
             />
             <l.LoginInput

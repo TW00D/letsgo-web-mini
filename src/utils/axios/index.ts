@@ -1,10 +1,8 @@
 import axios, { AxiosError } from "axios";
 import { setToken, getToken } from "../functions/TokenManagers";
 
-const BASE_URL = "http://localhost:8080/";
-
 const instance = axios.create({
-  baseURL: BASE_URL,
+  baseURL: `${import.meta.env.BASE_URL}`,
   timeout: 10000,
 });
 
@@ -36,7 +34,7 @@ instance.interceptors.response.use(
       const originalRequest = config;
       const refreshToken = await getToken().refreshToken;
 
-      const { data } = await axios.post(`${BASE_URL}`, {
+      const { data } = await axios.post(`${import.meta.env.BASE_URL}`, {
         refreshToken,
       });
       const { accessToken: newAccessToken, refreshToken: newRefreshToken } =

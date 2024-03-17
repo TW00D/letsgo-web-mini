@@ -28,6 +28,21 @@ export const NavIntroduction = styled.h5`
   font-weight: 400;
 `;
 
+//export const NavAvatarImg = styled.img``;
 export const NavAvatarImg = styled.img`
+  width: 75px;
+  height: 75px;
 
-`
+  border-radius: 100%;
+`;
+export const NavAvatarWraper = styled.div`
+  background: rgb(219, 0, 255);
+  background: linear-gradient(
+    139deg,
+    rgba(219, 0, 255, 1) 0%,
+    rgba(121, 69, 236, 1) 100%
+  );
+
+  border-radius: 100%;
+  padding: 2px;
+`;

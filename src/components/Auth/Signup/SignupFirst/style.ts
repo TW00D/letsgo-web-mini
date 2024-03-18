@@ -55,7 +55,8 @@ export const SignupInputWraper = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 20px;
+  align-items: center;
 `;
 
 export const SignupInput = styled.input`
@@ -78,7 +79,7 @@ export const SignupActiveButton = styled.button`
   width: 100%;
   height: 50px;
   border-radius: 10px;
-  margin-top: 60px;
+  margin-top: 40px;
   border: none;
   font-size: 16px;
   font-family: "Pretendard";
@@ -92,7 +93,7 @@ export const SignupPassiveButton = styled.button`
   width: 100%;
   height: 50px;
   border-radius: 10px;
-  margin-top: 60px;
+  margin-top: 40px;
   border: none;
   font-size: 16px;
   font-family: "Pretendard";

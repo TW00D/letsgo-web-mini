@@ -23,10 +23,12 @@ export const NavContainer = styled.div`
 `;
 
 export const NavTopWrap = styled.div`
-  width: 100%;
+  width: 80%;
   height: 50px;
-
-  margin-top: 56px;
+  display: flex;
+  justify-content: flex-start;
+  
+  margin-top: 10px;
   text-align: center;
 `;
 
@@ -42,6 +44,7 @@ export const NavMidWrap = styled.div`
   display: flex;
   flex-direction: column;
 
+  margin-top: 10px;
   row-gap: 25px;
   font-size: 16px;
   font-weight: 400;

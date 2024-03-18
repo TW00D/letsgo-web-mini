@@ -11,7 +11,7 @@ export const NavContainer = styled.div`
 
   display: flex;
   flex-direction: column;
-  row-gap: 90px;
+  row-gap: 30px;
   align-items: center;
 
   background-color: #fff;

@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
+export const AvatarWraper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 export const NavTextWraper = styled.div`
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,4 +51,32 @@ export const NavAvatarWraper = styled.div`
 
   border-radius: 100%;
   padding: 2px;
+  width: 75px;
+  height: 75px;
+`;
+
+export const NavAvatarTag = styled.div`
+  position: relative;
+  margin: 10px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      to right,
+      rgba(219, 0, 255, 1) 0%,
+      rgba(121, 69, 236, 1) 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-align: center;
+
+  border-style: solid;
+  border-radius: 50px;
+`;
+
+export const NavAvatarTagText = styled.div`
+  color: black;
+  font-family: "pretendard";
+  font-weight: 500;
+  font-size: 0.9em;
+  margin: 5px 10px;
 `;

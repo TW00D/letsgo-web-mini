@@ -11,7 +11,8 @@ export const NavContainer = styled.div`
 
   display: flex;
   flex-direction: column;
-  row-gap: 90px;
+  row-gap: 30px;
+  align-items: center;
 
   background-color: #fff;
   color: #f6f6f6;
@@ -36,13 +37,12 @@ export const NavTitle = styled.img`
 `;
 
 export const NavMidWrap = styled.div`
-  width: 100%;
+  width: 80%;
 
   display: flex;
   flex-direction: column;
 
   row-gap: 25px;
-  padding-left: 46px;
   font-size: 16px;
   font-weight: 400;
   font-family: "Pretendard";

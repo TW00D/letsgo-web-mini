@@ -1,5 +1,13 @@
+import NavAvatar from "./NavAvatar";
+import NavScore from "./NavScore/index";
+
 const NavProfile = () => {
-    return <div>dd</div>;
-}
+  return (
+    <>
+      <NavAvatar />
+      <NavScore></NavScore>
+    </>
+  );
+};
 
 export default NavProfile;

@@ -1,0 +1,12 @@
+import * as S from "./style";
+const SchoolWidget = () => {
+  return (
+    <>
+      <S.SchoolWidgetContainer>
+        <S.SchoolWidgetTitle>지금 우리 학교는?</S.SchoolWidgetTitle>
+      </S.SchoolWidgetContainer>
+    </>
+  );
+};
+
+export default SchoolWidget;

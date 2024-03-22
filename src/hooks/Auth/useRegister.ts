@@ -32,7 +32,7 @@ export function useRegister() {
     register.mutate(registerData, {
       onSuccess: () => { 
         toast.success("회원가입에 성공했습니다.");
-        navigate("/SignupSecond");
+        navigate("/login");
       },
       onError: (err) => { 
         if (axios.isAxiosError(err)) {
@@ -45,7 +45,7 @@ export function useRegister() {
               toast.error("사용자를 찾을 수 없습니다.");
               break;
             default:
-              toast.error("서버 오류가 발생했습니다.");
+              toast.error("아이디를 6자 이상 입력해주세요.");
           }
         } else {
           toast.error("네트워크 연결 상태를 확인해주세요.");

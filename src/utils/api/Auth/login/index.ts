@@ -1,3 +1,4 @@
+import { AxiosError } from "axios";
 import { useMutation } from "react-query";
 import instance from "../../../axios";
 
@@ -13,7 +14,7 @@ export interface UserLoginRequestDto {
 }
 
 export const useUserLogin = () => {
-  return useMutation<TokenResponse, unknown, UserLoginRequestDto, unknown>(
+  return useMutation<TokenResponse, AxiosError, UserLoginRequestDto, unknown>(
     async (signData: UserLoginRequestDto) => {
       const response = await instance.post<TokenResponse>(
         `${import.meta.env.VITE_BASE_URL}/v1/api/auth/login`,

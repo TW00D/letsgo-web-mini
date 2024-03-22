@@ -1,3 +1,4 @@
+import { AxiosError } from "axios"
 import { useMutation } from "react-query";
 import instance from "../../../axios";
 
@@ -14,7 +15,7 @@ export interface RegisterRequest {
 }
 
 export const useUserRegister = () => {
-  return useMutation<GeneralResponse, unknown, RegisterRequest, unknown>(
+  return useMutation<GeneralResponse, AxiosError, RegisterRequest, unknown>(
     async (registerData: RegisterRequest) => {
       const response = await instance.post<GeneralResponse>(
         `${import.meta.env.VITE_BASE_URL}/v1/api/auth/register`,

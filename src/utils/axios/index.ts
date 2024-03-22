@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios";
 import { setToken, getToken } from "../functions/TokenManagers";
 
 const instance = axios.create({
-  baseURL: `${import.meta.env.BASE_URL}`,
+  baseURL: `${import.meta.env.VITE_BASE_URL}`,
   timeout: 10000,
 });
 
@@ -34,7 +34,7 @@ instance.interceptors.response.use(
       const originalRequest = config;
       const refreshToken = await getToken().refreshToken;
 
-      const { data } = await axios.post(`${import.meta.env.BASE_URL}`, {
+      const { data } = await axios.post(`${import.meta.env.VITE_BASE_URL}`, {
         refreshToken,
       });
       const { accessToken: newAccessToken, refreshToken: newRefreshToken } =

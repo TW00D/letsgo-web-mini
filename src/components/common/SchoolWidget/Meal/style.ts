@@ -19,7 +19,7 @@ export const MealWidgetContents = styled.div`
 
 export const MealWidgetTitle = styled.h2`
   font-family: "pretendard";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1em;
   color: white;
   margin-bottom: 3%;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const SchoolWidgetContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   background-color: white;
   width: 330px;
   height: 330px;
@@ -8,6 +10,7 @@ export const SchoolWidgetContainer = styled.div`
   box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.01);
   padding: 20px;
   box-sizing: border-box;
+  justify-content: space-between;
 `;
 
 export const SchoolWidgetTitle = styled.h2`

@@ -8,4 +8,5 @@ export const HomeContainer = styled.div`
 
   padding-left: 40%;
   padding-top: 10%;
+
 `;

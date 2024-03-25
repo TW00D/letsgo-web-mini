@@ -18,3 +18,8 @@ export const HomeTopWrap = styled.div`
     width: 100%;
   }
 `;
+
+  padding-left: 40%;
+  padding-top: 10%;
+
+`;

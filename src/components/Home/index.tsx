@@ -1,4 +1,5 @@
 import Nav from "../common/Nav";
+import SchoolWidget from "../common/SchoolWidget";
 import banner from "../../assets/banner.svg";
 import * as h from "./style"
 import { Header } from "../common/Header";
@@ -8,6 +9,7 @@ const Home = () => {
     return (
         <h.HomeContainer>
           <Nav />
+          <SchoolWidget />
           <h.HomeTopWrap>
             <img src={banner} alt="배너입니다." />
             <Header />

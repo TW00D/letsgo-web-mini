@@ -10,20 +10,24 @@ export const WriteContainter = styled.div`
 export const WriteWrap = styled.div`
   width: 100%;
   height: 40px;
-  text-align: center;
+  display: flex; 
+  justify-content: center;
   align-items: center;
-  color: #d3d2da;
+  color: transparent;
   border-radius: 25px;
-  border: 2px solid transparent;
-  background: linear-gradient(45deg, #db00ff, #7945ec) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor; 
-  mask-composite: exclude;
+  border: 1px solid #7945ec;
   margin-left: 2%;
+
+  cursor: pointer;
 
   span {
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 400;
     font-family: "Pretendard";
+    background-image: linear-gradient(to right, #db00ff, #7945ec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 `;
+

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ConfirmListContainer = styled.div`
   width: 100%;
-  max-width: 720px;
+  max-width: 40%;
   background-color: #fff;
   margin-top: 2%;
 `;

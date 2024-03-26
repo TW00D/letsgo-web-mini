@@ -26,7 +26,7 @@ const Search = () => {
   return (
     <s.SearchContainer onClick={handleContainerClick}>
       <s.SearchWrap>
-        <img src={SearchIcon} alt="error" />
+        <img src={SearchIcon} alt="error" style={{ width: "20px", height: "20px" }} />
         {isInputVisible ? (
           <input
             type="text"

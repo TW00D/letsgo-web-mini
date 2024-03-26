@@ -4,8 +4,11 @@ import Likes from "../../../assets/like.svg";
 import Comment from "../../../assets/comment.svg";
 import Viewer from "../../../assets/view.svg";
 import Test from "../../../assets/test.svg";
+import { useNavigate } from "react-router-dom";
 
 const Table: React.FC = () => {
+  const navigate = useNavigate();
+
   const items = [
     { id: 1, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
     { id: 2, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
@@ -17,7 +20,7 @@ const Table: React.FC = () => {
   ];
 
   return (
-    <S.ConfirmListContainer>
+    <S.ConfirmListContainer onClick={() => navigate("/detail")}>
       {items.map((item) => (
         <S.ConfirmListItemContaienr key={item.id}>
           <S.ConfirmImageWrap>

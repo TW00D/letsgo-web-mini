@@ -9,7 +9,6 @@ const Home = () => {
     return (
         <h.HomeContainer>
           <Nav />
-          <SchoolWidget />
           <h.HomeTopWrap>
             <img src={banner} alt="배너입니다." />
             <Header />

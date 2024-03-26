@@ -1,5 +1,8 @@
 import React from "react";
 import * as S from "./style";
+import Likes from "../../../assets/like.svg";
+import Comment from "../../../assets/comment.svg";
+import Viewer from "../../../assets/view.svg";
 import Test from "../../../assets/test.svg";
 
 const Table: React.FC = () => {
@@ -28,6 +31,15 @@ const Table: React.FC = () => {
               <span>선화예술고등학교 3학년</span>
             </S.ConfirmSubTitle>
           </S.ConfirmListItem>
+          <S.RightTopInfo>1분전</S.RightTopInfo>
+          <S.RightBottomInfo>
+            <img src={Likes} alt="좋아요 수" />
+              <span>16</span>
+            <img src={Comment} alt="댓글 수" />
+              <span>2</span>
+            <img src={Viewer} alt="본사람" />
+              <span>50</span>
+          </S.RightBottomInfo>
         </S.ConfirmListItemContaienr>
       ))}
     </S.ConfirmListContainer>

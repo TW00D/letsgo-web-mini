@@ -1,7 +1,7 @@
 export const TOGGLE_ITEM = [
   {
     title: "최신",
-    link: "/latest",
+    link: "/",
   },
   {
     title: "인기",

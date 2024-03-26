@@ -16,20 +16,13 @@ export const ConfirmImageWrap = styled.div`
   margin-left: 15px;
 `;
 
-export const ConfirmListHeader = styled.div`
-  display: flex;
-  align-items: center;
-  height: 50px;
-  border-top: 3px solid #636363;
-  border-bottom: 3px solid #636363;
-`;
-
 export const ConfirmListItemContaienr = styled.div`
   display: flex;
   align-items: center;
   height: 80px;
   cursor: pointer;
-  border-bottom: 1px solid #F1F1F3;
+  border-bottom: 1px solid #f1f1f3;
+  position: relative;
   &:hover {
     background-color: #fff;
   }
@@ -44,13 +37,40 @@ export const ConfirmListItem = styled.div`
 
 export const ConfirmSubTitle = styled.div`
   font-size: 12px;
-  font-family: 'Pretnedard';
+  font-family: "Pretnedard";
   font-weight: 200;
-  color: #8D8CA0;
+  color: #8d8ca0;
 
   margin-top: 10px;
 
   img {
     width: 10px;
   }
-`
+`;
+
+export const RightTopInfo = styled.div`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: 200;
+  font-family: "Pretendard";
+  color: #9f9faf;
+`;
+
+export const RightBottomInfo = styled.div`
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  margin-right: 3%;
+
+  span {
+    font-size: 12px;
+    font-weight: 200;
+    font-family: "Pretendard";
+    color: #000000;
+    margin-right: 10%;
+  }
+`;

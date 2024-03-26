@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../style/Theme";
 
 export const NavContainer = styled.div`
   position: relative;
@@ -20,6 +21,7 @@ export const NavContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
   }
+
 `;
 
 export const NavTopWrap = styled.div`
@@ -49,18 +51,23 @@ export const NavMidWrap = styled.div`
   font-size: 16px;
   font-weight: 400;
   font-family: "Pretendard";
-  color: #bdbdc8;
+  color: #706F88;
 
   @media screen and (max-width: 768px) {
     padding-left: 20px;
   }
 `;
 
-export const NavCategoryBox = styled.div`
+export const NavCategoryBox = styled.div<{ isMatch: boolean }>`
   display: flex;
   align-items: center;
+  color: ${({ theme, isMatch }) => (isMatch ? theme.contrast : "#BDBDC8")};
 
   font-size: 14px;
   column-gap: 14px;
   cursor: pointer;
+
+  span {
+    margin-left: -11%;
+  }
 `;

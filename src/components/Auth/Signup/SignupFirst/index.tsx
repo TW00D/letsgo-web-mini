@@ -26,6 +26,13 @@ const SignupFirst = () => {
               onChange={handleChange}
             />
             <S.SignupInput
+              type="text"
+              placeholder="닉네임을 입력해주세요"
+              name="text"
+              value={registerData?.password}
+              onChange={handleChange}
+            />
+            <S.SignupInput
               type="password"
               placeholder="비밀번호를 입력해주세요"
               name="password"

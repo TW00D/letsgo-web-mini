@@ -1,5 +1,38 @@
+import TrendPost from "./TrendPost";
 import * as T from "./style";
 
+const dummy = [
+  {
+    rank: 1,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 2,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 3,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 4,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 5,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 1,
+    title: "노윤서",
+    point: 1000,
+  },
+];
 const TrendWidget = () => {
   return (
     <>
@@ -9,6 +42,11 @@ const TrendWidget = () => {
           <T.TrendActiveButton>1~10위</T.TrendActiveButton>
           <T.TrendDisableButton>11~20위</T.TrendDisableButton>
         </T.TrendButtonWraper>
+        <T.TrendPostWraper>
+          {dummy.map((data) => (
+            <TrendPost data={data}></TrendPost>
+          ))}
+        </T.TrendPostWraper>
       </T.TrendWidgetContainer>
     </>
   );

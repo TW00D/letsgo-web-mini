@@ -42,7 +42,7 @@ export function useLogin() {
               toast.error("로그인에 실패했습니다");
               break;
             case 404:
-              toast.error("아이디와 비벌번호를 다시 확인해주세요");
+              toast.error("아이디와 비밀번호를 다시 확인해주세요");
               break;
             default:
               toast.error("로그인에 실패했습니다");

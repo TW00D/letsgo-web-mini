@@ -19,3 +19,9 @@ export const HomeTopWrap = styled.div`
     width: 100%;
   }
 `;
+
+export const WidgetWraper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 65%;
+`;

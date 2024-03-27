@@ -7,11 +7,13 @@ import { useUserRegister } from "../../utils/api/Auth/signup";
 export function useRegister() {
   const [registerData, setRegisterData] = useState<{
     username: string;
+    nickname: string;
     password: string;
     image: string;
   }>({
     username: "",
     password: "",
+    nickname: "",
     image: "" 
   });
   const navigate = useNavigate();

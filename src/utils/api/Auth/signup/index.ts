@@ -10,6 +10,7 @@ export interface GeneralResponse {
 
 export interface RegisterRequest {
   username: string;
+  nickname: string;
   password: string;
   image: string;
 }

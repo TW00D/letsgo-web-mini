@@ -2,13 +2,22 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   display: flex;
-  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   height: 100vh;
   background-color: #f6f6f6;
+`;
 
-  padding-left: 40%;
-  padding-top: 10%;
-  box-sizing: border-box;
+export const HomeTopWrap = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+  }
 `;
 
 export const WidgetWraper = styled.div`

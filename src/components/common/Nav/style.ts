@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
   top: 0;
   left: 0;
 
-  width: 17%;
+  width: 300px;
   height: 100vh;
 
   display: flex;
@@ -27,7 +27,7 @@ export const NavTopWrap = styled.div`
   height: 50px;
   display: flex;
   justify-content: flex-start;
-  
+
   margin-top: 10px;
   text-align: center;
 `;

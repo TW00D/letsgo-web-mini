@@ -4,7 +4,7 @@ export const TrendWidgetContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 280px;
+  width: 300px;
   height: 400px;
   border-radius: 20px;
   box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.01);
@@ -27,7 +27,7 @@ export const TrendButtonWraper = styled.div`
   margin-top: 5%;
 `;
 export const TrendActiveButton = styled.button`
-  width: 120px;
+  width: 140px;
   height: 30px;
   font-family: "Pretendard";
   background:

@@ -28,7 +28,27 @@ const dummy = [
     point: 1000,
   },
   {
-    rank: 1,
+    rank: 6,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 7,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 8,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 9,
+    title: "노윤서",
+    point: 1000,
+  },
+  {
+    rank: 10,
     title: "노윤서",
     point: 1000,
   },

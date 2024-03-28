@@ -8,9 +8,14 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   width: 40%;
-  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: #fff;
   margin-top: -1.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-sizing: border-box;
 `;
 
 export const SuggestionContainer = styled.div<TextItemProps>`

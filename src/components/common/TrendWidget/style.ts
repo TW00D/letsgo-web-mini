@@ -4,12 +4,14 @@ export const TrendWidgetContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 300px;
-  height: 400px;
+  width: 280px;
+  height: 360px;
   border-radius: 20px;
   box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.01);
   padding: 20px;
   box-sizing: border-box;
+  top: 300px;
+  position: sticky;
 `;
 
 export const TrendWidgetTitle = styled.h2`
@@ -24,10 +26,10 @@ export const TrendWidgetTitle = styled.h2`
 `;
 
 export const TrendButtonWraper = styled.div`
-  margin-top: 5%;
+  margin-top: 3%;
 `;
 export const TrendActiveButton = styled.button`
-  width: 140px;
+  width: 120px;
   height: 30px;
   font-family: "Pretendard";
   background:
@@ -36,6 +38,7 @@ export const TrendActiveButton = styled.button`
   color: #313149;
   border: 2px solid transparent;
   display: inline-block;
+  border-top-left-radius: 10px;
 `;
 
 export const TrendDisableButton = styled.button`
@@ -48,6 +51,6 @@ export const TrendDisableButton = styled.button`
 `;
 
 export const TrendPostWraper = styled.div`
-  margin-top: 5%;
+  margin-top: 3%;
   border-top: 1px solid #f1f1f3;
 `;

@@ -17,6 +17,10 @@ const Table: React.FC = () => {
     { id: 5, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
     { id: 6, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
     { id: 7, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
+    { id: 8, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
+    { id: 9, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
+    { id: 10, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
+    { id: 11, title: "안녕하세요", subTitle: "통합 | 선화예술고등학교 3학년" },
   ];
 
   return (
@@ -37,11 +41,11 @@ const Table: React.FC = () => {
           <S.RightTopInfo>1분전</S.RightTopInfo>
           <S.RightBottomInfo>
             <img src={Likes} alt="좋아요 수" />
-              <span>16</span>
+            <span>16</span>
             <img src={Comment} alt="댓글 수" />
-              <span>2</span>
+            <span>2</span>
             <img src={Viewer} alt="본사람" />
-              <span>50</span>
+            <span>50</span>
           </S.RightBottomInfo>
         </S.ConfirmListItemContaienr>
       ))}

@@ -12,16 +12,16 @@ export const TrendPostContainer = styled.div`
 
 export const TrendPostRank = styled.h2`
   margin: 2%;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #3e3d4b;
   font-family: "pretendard";
   margin-left: 5%;
-  margin-right: 8%;
+  width: 20px;
 `;
 
 export const TrendPostTitle = styled.h2`
-  margin: 2%;
-  font-size: 0.9em;
+  margin: 1%;
+  font-size: 0.8em;
   color: #3e3d4b;
   font-family: "pretendard";
   font-weight: 400;
@@ -30,7 +30,7 @@ export const TrendPostTitle = styled.h2`
 `;
 
 export const TrendPostPoint = styled.h2`
-  margin: 2%;
+  margin: 1%;
   font-size: 0.8em;
   color: #9f9faf;
   font-weight: 300;

@@ -18,11 +18,9 @@ export const SchoolnewsTitleWraper = styled.div`
 `;
 
 export const SchoolnewsTitleIcon = styled.img`
-  font-family: "pretendard";
-  font-weight: 600;
-  font-size: 1em;
-  color: #2f2f39;
+  height: 25px;
 `;
+
 export const SchoolnewsTitle = styled.div`
   font-family: "pretendard";
   font-weight: 600;

@@ -11,6 +11,8 @@ export const SchoolWidgetContainer = styled.div`
   padding: 20px;
   box-sizing: border-box;
   justify-content: space-between;
+  top: 0;
+  position: sticky;
 `;
 
 export const SchoolWidgetTitle = styled.h2`
